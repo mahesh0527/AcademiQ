@@ -8,12 +8,13 @@ import numpy as np
 import warnings
 warnings.filterwarnings("ignore")
 
+# Lazy SHAP import — only loads when needed
+SHAP_AVAILABLE = False
 try:
     import shap
     SHAP_AVAILABLE = True
 except Exception:
     SHAP_AVAILABLE = False
-
 try:
     from sklearn.impute import SimpleImputer
     if not hasattr(SimpleImputer, "_fill_dtype"):
