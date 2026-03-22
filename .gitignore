@@ -1,0 +1,26 @@
+
+```
+# Virtual environment
+venv/
+__pycache__/
+*.pyc
+
+# Model files
+*.joblib
+
+# Dataset files
+*.csv
+
+# Executable installers
+*.exe
+
+# Office/PDF files (optional — remove these lines if you want them on GitHub)
+*.pdf
+*.pptx
+*.docx
+*.ppt
+
+# System
+.DS_Store
+Thumbs.db
+.streamlit/
